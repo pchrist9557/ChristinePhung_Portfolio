@@ -2,7 +2,7 @@
 <html>
  <head>
  	<meta charset="utf-8"/>
-  <title> Jumbotron </title>
+  <title>Jumbotron</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="ChristinePhung.css" type="text/css">
@@ -15,15 +15,44 @@
               <div class="jumbotron">
 
               <span style="font-size: 20pt;"><span style="font-family: Impact; text-align: center;"><p><img width="600px" src=images/New_Christine.jpg><br><br>Junior Web Developer and Designer</p></span>
+             <center><img src="images/Profile_Holder.jpg" height="400px"></center>
 
             </div>
         </div>
 
         <div class="container">
              <div class="jumbotron">
+            
 
-           <span style="font-size: 25pt;"><span style="font-family: Impact; text-align: center;"><p><b>Welcome to my Portfolio!</b></p></span>
-           <div style="background-color:#ffffff; font-family: Lucida Grande; font-size: 14pt; text-align:left; vertical-align: middle; padding:20px 40px;"><p>I specialize in front-end development and designs. In 2015, I graduated at the University of Oklahoma with a bachelor's degree in political science. Upon graduation, I worked in digital marketing and learned about front-end programming and designs. I have experience in Adobe Photoshop and InDesign. I learned programming for web development at OkCoders bootcamp and worked on projects. Check out my skills and expertise!</p></div>
+            <h1 id="hid"></h1>
+
+            <script type="text/javascript">
+                var i = 1;
+                function func()
+                {
+                  var message = "Welcome to my Portfolio!";
+                  if( i <= message.length )
+                  {
+                    var txt = message.substring(0,i);
+                    document.getElementById("hid") .innerHTML = txt;
+                    setTimeout("func()", 100);
+                    i++;
+                  }
+                  else {
+                    i = 1;
+                    document.getElementById("hid") .innerHTML = "";
+                    setTimeout("func()", 100);
+
+                  }
+
+                }
+
+                func();
+
+                </script>         
+
+           <span style="font-size: 25pt;"><span style="font-family: Impact; text-align: center;"><font color= "#EC78B0";></span></font></span>
+           <div style="background-color:#ffffff; font-family: Lucida Grande; font-size: 14pt; text-align:left; vertical-align: middle; padding:20px 40px;"><font color= "#EC78B0";><p>I specialize in front-end development and designs. In 2015, I graduated at the University of Oklahoma with a bachelor's degree in political science. Upon graduation, I worked in digital marketing and learned about front-end programming and designs. I have experience in Adobe Photoshop and InDesign. I learned programming for web development at OkCoders bootcamp and worked on projects. Check out my skills and expertise!</font></p></div>
                          
                          </div>
                        </div>
@@ -34,17 +63,15 @@
         <h2 style = "color:#484848">Skills</h2>
 
         
-          <div style="background-color:#ffffff; font-family: Lucida Grande; font-size: 14pt; text-align:left; vertical-align: middle; padding:20px 40px;">
+        <div style="background-color:#ffffff; font-family: Lucida Grande; font-size: 14pt; text-align:left; vertical-align: middle; padding:20px 40px;">
             <div class="container">
-              <img width="300px" src="images/HTML_CSS_Final_Logo.jpg">
-              <img width="180px" src="images/Bootstrap_Final_logo.jpg">
+              <img width="350px" src="images/HTML_CSS_Final_Logo.jpg">
+              <img width="200px" src="images/Bootstrap_Final_logo.jpg">
               <img width="300px" src="images/JS_Final_logo.jpg">
-              <img width="140px" src="images/Json_FinAl_LOGO.jpg" style="float:right">
-              <img width="157px" src="images/Node.JS_Final_logo.jpg">
-              <img width="150px" src="images/Angular_Final_Logo.jpg">
-              <img width="250px" src="images/React_final_logo.jpg">
-              <img width="150px" src="images/Linux_Final_Logo.jpg">
-              <img width="200px" src="images/Adobe_Final_Logo.jpg">
+              <img width="150px" src="images/Json_FinAl_LOGO.jpg">
+              <img width="200px" src="images/Node.JS_Final_logo.jpg">
+              <img width="200px" src="images/Linux_Final_Logo.jpg">
+              <img width="250px" src="images/Adobe_Final_Logo.jpg">
             </div>
       </div>
     </div>
@@ -60,8 +87,9 @@
              <h3 style = "color:#484848">Projects</h3>
               
                 <div style="background-color:#ffffff; font-family: Lucida Grande; font-size: 14pt; text-align:left; vertical-align: middle; padding:20px 40px;">
-                  <p><b>Blog<b></p>
-                  <p><b>OkCoders Class Assignments (Github)<b></p>
+                  <p><b><a href="https://github.com/pchrist9557/ChristinePhung_Portfolio.git">My Porfolio</a></b></p>
+                  <p><b><a href="https://github.com/pchrist9557/JavaScript-Week4.git">OkCoders Class Assignments JavasScript & JSON</a></b></p>
+                  <p><b><a href="https://github.com/pchrist9557/2018-JavaScript-Week-1.git">99 Bottles of Beer - JS Loop</a></b></p>
                   <p><b>Cozy Crumbs Macarons<b></p>
                </div>
              </div>
@@ -76,9 +104,9 @@
 
        <h4 style = "color:#484848">Contact me</h4>
 
-       <div style="background-color:#ffffff; font-family: Lucida Grande; font-size: 14pt; text-align:left; vertical-align: middle; padding:20px 40px;"><span style="font-size: 12pt; font-family: Lucida Grande;"><p><b>Email: pchrist957@gmail.com<b></p></span>
-       <span style="font-size: 12pt; font-family: Lucida Grande;"><p><b>Phone: (405) 626-1741<b></p></span>
-     </div>
+       <div style="background-color:#ffffff; font-family: Lucida Grande; font-size: 14pt; text-align:left; vertical-align: middle; padding:20px 40px;"><span style="font-size: 12pt; font-family: Lucida Grande;"><p><b><a href= "mailto:pchrist9557@gmail.com">Email: pchrist957@gmail.com</a></b></p>
+       <div style="font-size: 12pt; font-family: Lucida Grande;"><p><b>Phone: (405) 626-1741<b></p></div>
+     
    </div>
  </div>
 
